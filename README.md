@@ -10,6 +10,3 @@ This portfolio project demonstrates skills in:
 - Machine learning modeling & evaluation
 - Communicating actionable business insights
 
----
-
-## 📂 Repository Structure
