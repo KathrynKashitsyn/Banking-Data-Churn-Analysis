@@ -1,6 +1,6 @@
 # Customer Churn Analysis & Prediction
 
-## 📌 Project Overview
+## Project Overview
 Customer churn is a major challenge in subscription-based businesses. In this project, I analyze a customer dataset to uncover patterns behind churn and build predictive models to identify customers at risk of leaving.  
 
 This portfolio project demonstrates skills in:
