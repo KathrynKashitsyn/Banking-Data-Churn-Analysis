@@ -22,6 +22,7 @@ In this project, I analyzed a customer dataset to uncover patterns behind churn 
 - Data cleaning & preprocessing
 - Exploratory data analysis (EDA)
 - Feature engineering
+- Statistical tests
 - Machine learning modeling & evaluation
 - Communicating actionable business insights
 
@@ -86,9 +87,13 @@ Age is the most importand churn predictor, these are the counts for different Ag
 | Senior (60+)        |       75.22  |     24.78  |
 
 Churn Rates by Age Category:
+
 Young (≤29): 7.56% churn rate
+
 Middle-aged (30–45): 15.3% churn rate
+
 Mature (46–60): 51.12% churn rate
+
 Senior (60+): 24.78% churn rate
 
 
@@ -117,5 +122,44 @@ Mature customers (46–60) show the highest churn risk across almost all balance
 Senior customers (60+) also have relatively high churn risk, but slightly lower than mature customers (27–32%).
 
 Younger customers (≤29) consistently show the lowest churn rates across balance tiers (as low as 3.89% in Zero balance).
+
+## Statistical Tests
+
+Pairwise T-test is suitable here because we want to check if the average value in various age categories is **significantly** different between churned vs. non-churned customers.
+
+<img width="480" height="572" alt="image" src="https://github.com/user-attachments/assets/3386feb7-e8d7-44fc-8697-a89c997227ed" />
+
+The results show t-statistics of -33 to -90, which are HUGE - indicating extremely strong evidence that churn rates differ between age groups.
+
+**What it means:**
+
+- Age strongly predicts churn - different age groups have meaningfully different churn rates
+
+- The differences are not random - they're statistically significant based on p-value = 0.0000 and < α
+
+- We should tailor retention strategies by age group since their churn behavior differs substantially
+
+## Chi-squared test
+
+Let's observe categories. We can use a chi-square test to check whether categorical variables are related to churn.
+
+**Based on geography:**
+<img width="295" height="443" alt="image" src="https://github.com/user-attachments/assets/80d5b5f2-d680-4784-ac33-1048f3d8a62c" />
+
+**Key Findings:**
+
+
+Highly Significant Association (p-value: 0.0000)
+
+- There's a statistically significant relationship between geography and churn
+
+- The probability this pattern occurred by random chance is essentially zero
+
+
+**Germany Churn requires attention**
+
+- Germany: 32.44% churn rate (almost 1 in 3 customers leave) - German customers are churning at DOUBLE the rate of other countries
+
+- France and Spain Have Similar Patterns, Both around 16% churn rate (industry average for banking), No significant difference between these two markets
 
 
