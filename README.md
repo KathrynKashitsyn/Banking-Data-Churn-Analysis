@@ -51,6 +51,7 @@ The dataset contains:
 ## Numerical Data
 
 <img width="1785" height="1025" alt="image" src="https://github.com/user-attachments/assets/eb373d9f-fa6c-4147-ab10-b3af2f161250" />
+
 - **CreditScore** - Bell-shaped, slightly left-skewed distribution centered around 650-700 with a small spike around 900
 - **Age** - Right-skewed distribution with median around customers aged 30-45
 - **Tenure** - Nearly uniform distribution (1-9 years) with lower frequencies at 0 and 10 years
