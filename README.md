@@ -68,4 +68,22 @@ Since we are interested in churn, the numeric data for 'Exited' category reveals
 - **Tenure** -  Nearly identical distributions (both medians ~5 years).
 - **Balance** - Churned customers have higher median balance (~110,000) than retained customers (~95,000), retained customers have a substantial zero-balance number shown in Q1.
 - **NumOfProducts** - Similar distributions (both medians = 1 product). 
-- **EstimatedSalary** - Virtually identical distributions (both medians ~100,000). 
+- **EstimatedSalary** - Virtually identical distributions (both medians ~100,000).
+
+## Customer segmentation and Feature Engineering
+
+Age is the most importand churn predictor, these are the counts for different Age Categories
+<img width="281" height="132" alt="image" src="https://github.com/user-attachments/assets/cb409c88-c269-41ca-b547-79c3099e8a1e" />
+
+Distribution Results:
+<img width="1589" height="790" alt="image" src="https://github.com/user-attachments/assets/78f34ce8-14a8-4089-b7ab-140a249cef19" />
+
+                     Retained  Exited
+AgeCategory                          
+Young (≤29)             92.44    7.56
+Middle-aged (30–45)     84.70   15.30
+Mature (46–60)          48.88   51.12
+Senior (60+)            75.22   24.78
+
+
+
