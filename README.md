@@ -73,6 +73,11 @@ Since we are interested in churn, the numeric data for 'Exited' category reveals
 
 ## Customer segmentation and Feature Engineering
 
+Loyalty feature represents the percentage of each customer's life that they were customers. We can do this by dividing Tenure by Age. It devides into three bins - Low, Medium and High
+<img width="401" height="269" alt="image" src="https://github.com/user-attachments/assets/a691bbcc-f833-4b20-8728-d294acf47ce6" />
+<img width="601" height="151" alt="image" src="https://github.com/user-attachments/assets/bf88d2bb-d980-47bc-b9a3-8d7208b30df2" />
+
+
 Age is the most importand churn predictor, these are the counts for different Age Categories
 <img width="281" height="132" alt="image" src="https://github.com/user-attachments/assets/cb409c88-c269-41ca-b547-79c3099e8a1e" />
 
@@ -125,6 +130,8 @@ Younger customers (≤29) consistently show the lowest churn rates across balanc
 
 ## Statistical Tests
 
+### T-test
+
 Pairwise T-test is suitable here because we want to check if the average value in various age categories is **significantly** different between churned vs. non-churned customers.
 
 <img width="480" height="572" alt="image" src="https://github.com/user-attachments/assets/3386feb7-e8d7-44fc-8697-a89c997227ed" />
@@ -139,7 +146,7 @@ The results show t-statistics of -33 to -90, which are HUGE - indicating extreme
 
 - We should tailor retention strategies by age group since their churn behavior differs substantially
 
-## Chi-squared test
+### Chi-squared test
 
 Let's observe categories. We can use a chi-square test to check whether categorical variables are related to churn.
 
@@ -160,6 +167,10 @@ Highly Significant Association (p-value: 0.0000)
 
 - Germany: 32.44% churn rate (almost 1 in 3 customers leave) - German customers are churning at DOUBLE the rate of other countries
 
-- France and Spain Have Similar Patterns, Both around 16% churn rate (industry average for banking), No significant difference between these two markets
+- France and Spain have Similar Patterns, both have around 16% churn rate (industry average for banking), and no significant difference between these two markets
 
+** Test for Loalty category**
+<img width="361" height="167" alt="image" src="https://github.com/user-attachments/assets/89d0ea84-3e5d-42d8-b475-024f07dc8955" />
+
+p-value < 0.05 → There’s a significant relationship between loyalty category and churn - inactive members leave more often.
 
