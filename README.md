@@ -75,15 +75,47 @@ Since we are interested in churn, the numeric data for 'Exited' category reveals
 Age is the most importand churn predictor, these are the counts for different Age Categories
 <img width="281" height="132" alt="image" src="https://github.com/user-attachments/assets/cb409c88-c269-41ca-b547-79c3099e8a1e" />
 
-Distribution Results:
+**Distribution Results:**
 <img width="1589" height="790" alt="image" src="https://github.com/user-attachments/assets/78f34ce8-14a8-4089-b7ab-140a249cef19" />
 
-                     Retained  Exited
-AgeCategory                          
-Young (≤29)             92.44    7.56
-Middle-aged (30–45)     84.70   15.30
-Mature (46–60)          48.88   51.12
-Senior (60+)            75.22   24.78
+| Age Category        | Retained (%) | Exited (%) |
+|:--------------------|-------------:|-----------:|
+| Young (≤29)         |       92.44  |      7.56  |
+| Middle-aged (30–45) |       84.70  |     15.30  |
+| Mature (46–60)      |       48.88  |     51.12  |
+| Senior (60+)        |       75.22  |     24.78  |
 
+Churn Rates by Age Category:
+Young (≤29): 7.56% churn rate
+Middle-aged (30–45): 15.3% churn rate
+Mature (46–60): 51.12% churn rate
+Senior (60+): 24.78% churn rate
+
+
+**Balance Tier Distribution:**
+
+Balance Ranges for Each Tier:
+Zero: $0.00 - $0.00
+Low: $3,768.69 - $100,169.51
+Very High: $139,528.23 - $250,898.09
+High: $119,852.01 - $139,496.35
+Medium: $100,194.44 - $119,839.69
+
+| Balance Tier | Customer Count |
+|--------------|---------------|
+| Zero         | 3,617         |
+| Low          | 1,596         |
+| Medium       | 1,596         |
+| High         | 1,595         |
+| Very High    | 1,596         |
+
+**Risk Heatmap**
+<img width="916" height="699" alt="image" src="https://github.com/user-attachments/assets/e324b101-c0f2-4b11-9381-333fe3efb626" />
+
+Mature customers (46–60) show the highest churn risk across almost all balance tiers, with values above 50%, peaking at 62.75% in the Medium balance tier.
+
+Senior customers (60+) also have relatively high churn risk, but slightly lower than mature customers (27–32%).
+
+Younger customers (≤29) consistently show the lowest churn rates across balance tiers (as low as 3.89% in Zero balance).
 
 
