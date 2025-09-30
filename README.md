@@ -235,7 +235,7 @@ Our analysis reveals significant revenue erosion due to customer churn, with an 
    • Current Churn Rate: 20.4%
    • Annual Revenue Loss: $2,037,000
 
-KEY INSIGHTS:
+**KEY INSIGHTS:**
 
    1. Mature customers (46-60) have 51% churn rate vs 20% overall
    2. German customers churn at 32% vs 16% for France/Spain
@@ -243,7 +243,8 @@ KEY INSIGHTS:
    4. Customers with 1 product churn more than those with 2+ products
 
 
-Strategic Recommendations:
+**Strategic Recommendations:**
+
 Priority 1: High-Impact Retention Initiatives (Immediate)
 - Segment-Specific Campaigns: Develop targeted programs for German customers and mature demographic (46-60 years)
 - Proactive Reactivation: Implement immediate outreach to inactive customer segments
@@ -257,12 +258,14 @@ Priority 2: Medium-Term Enhancements (30-60 Days)
 **Success Metrics**
 
 Primary KPIs:
+
 -Reduction in overall churn rate
 -Increase in customer lifetime value (CLV)
 -Model accuracy in production environment
 -Return on investment for retention initiatives
 
 Secondary Indicators:
+
 - Improvement in customer engagement scores
 - Growth in multi-product adoption
 - Reduction in high-risk segment churn rates
