@@ -165,6 +165,7 @@ Highly Significant Association (p-value: 0.0000)
 - France and Spain have Similar Patterns, both have around 16% churn rate (industry average for banking), and no significant difference between these two markets
 
 ** Test for Loalty category**
+
 <img width="361" height="167" alt="image" src="https://github.com/user-attachments/assets/89d0ea84-3e5d-42d8-b475-024f07dc8955" />
 
 p-value < 0.05 → There’s a significant relationship between loyalty category and churn - inactive members leave more often.
@@ -178,6 +179,7 @@ The selection covers all key customer dimensions:
  Financials (Credit, Balance, Salary) 
  Behavior (Tenure, Products, Activity) 
  Relationship (Engagement, Product holdings)
+ 
 <img width="509" height="349" alt="image" src="https://github.com/user-attachments/assets/1a657261-c1d7-41fe-bdaf-3cd3721a633e" />
 
 Accuracy: 0.8092 (81%)
@@ -211,4 +213,57 @@ True Positives (Correctly predicted churners): 97
 
 👉 Out of 509 actual churners, the model only caught 97 (≈19%).
 
+
+## Random Forest
+
+<img width="331" height="430" alt="image" src="https://github.com/user-attachments/assets/091b958f-c136-407d-9db9-7ca77f000c96" />
+
+<img width="683" height="500" alt="image" src="https://github.com/user-attachments/assets/70f5ad8a-c0da-4dd0-ac57-7870660b8d17" />
+
+<img width="1489" height="490" alt="image" src="https://github.com/user-attachments/assets/41ecfbee-8be6-44ce-898b-002079ca377c" />
+
+
+##  What drives churn?
+
+<img width="446" height="338" alt="image" src="https://github.com/user-attachments/assets/4ea99d2d-f300-4454-8daa-84229ef83c1b" />
+
+## Summary
+
+Our analysis reveals significant revenue erosion due to customer churn, with an annual impact of $2.0M. Key risk segments have been identified, enabling targeted retention strategies with substantial ROI potential.
+
+• Total Customer Base: 10,000
+   • Current Churn Rate: 20.4%
+   • Annual Revenue Loss: $2,037,000
+
+KEY INSIGHTS:
+
+   1. Mature customers (46-60) have 51% churn rate vs 20% overall
+   2. German customers churn at 32% vs 16% for France/Spain
+   3. Inactive members are 3x more likely to churn
+   4. Customers with 1 product churn more than those with 2+ products
+
+
+Strategic Recommendations:
+Priority 1: High-Impact Retention Initiatives (Immediate)
+- Segment-Specific Campaigns: Develop targeted programs for German customers and mature demographic (46-60 years)
+- Proactive Reactivation: Implement immediate outreach to inactive customer segments
+- Predictive Modeling: Deploy churn prediction system with 70% probability threshold for interventions
+
+Priority 2: Medium-Term Enhancements (30-60 Days)
+- Product Portfolio Strategy: Create age-specific bundled offerings
+- Market-Specific Programs: Develop German market retention initiatives
+- Monitoring Infrastructure: Establish real-time customer activity tracking
+
+**Success Metrics**
+
+Primary KPIs:
+-Reduction in overall churn rate
+-Increase in customer lifetime value (CLV)
+-Model accuracy in production environment
+-Return on investment for retention initiatives
+
+Secondary Indicators:
+- Improvement in customer engagement scores
+- Growth in multi-product adoption
+- Reduction in high-risk segment churn rates
 
