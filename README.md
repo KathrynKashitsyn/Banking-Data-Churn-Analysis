@@ -73,11 +73,6 @@ Since we are interested in churn, the numeric data for 'Exited' category reveals
 
 ## Customer segmentation and Feature Engineering
 
-Loyalty feature represents the percentage of each customer's life that they were customers. We can do this by dividing Tenure by Age. It devides into three bins - Low, Medium and High
-<img width="401" height="269" alt="image" src="https://github.com/user-attachments/assets/a691bbcc-f833-4b20-8728-d294acf47ce6" />
-<img width="601" height="151" alt="image" src="https://github.com/user-attachments/assets/bf88d2bb-d980-47bc-b9a3-8d7208b30df2" />
-
-
 Age is the most importand churn predictor, these are the counts for different Age Categories
 <img width="281" height="132" alt="image" src="https://github.com/user-attachments/assets/cb409c88-c269-41ca-b547-79c3099e8a1e" />
 
@@ -173,4 +168,47 @@ Highly Significant Association (p-value: 0.0000)
 <img width="361" height="167" alt="image" src="https://github.com/user-attachments/assets/89d0ea84-3e5d-42d8-b475-024f07dc8955" />
 
 p-value < 0.05 → There’s a significant relationship between loyalty category and churn - inactive members leave more often.
+
+## Modeling with Logistic Regression
+
+Using 10 features for modeling: CreditScore, Geography, Gender, Age, Tenure, Balance, NumOfProducts, HasCrCard, IsActiveMember, EstimatedSalary
+
+The selection covers all key customer dimensions: 
+ Demographics (Age, Gender, Geography) 
+ Financials (Credit, Balance, Salary) 
+ Behavior (Tenure, Products, Activity) 
+ Relationship (Engagement, Product holdings)
+<img width="509" height="349" alt="image" src="https://github.com/user-attachments/assets/1a657261-c1d7-41fe-bdaf-3cd3721a633e" />
+
+Accuracy: 0.8092 (81%)
+→ Looks good at first, but it’s misleading here because most customers do not churn (class imbalance).
+
+Precision: 0.5988 (60%)
+→ When the model predicts “Churn,” it’s correct ~60% of the time.
+→ So, more than half of flagged customers are indeed churners.
+
+Recall: 0.1906 (19%)
+→ The model only catches ~19% of actual churners.
+→ This is very low: most churners are being missed.
+
+F1-Score: 0.2891 (29%)
+→ Low because recall drags it down.
+
+ROC AUC: 0.7836 (78%)
+→ Model is reasonably good at ranking churners higher than non-churners, but thresholding at 0.5 makes recall weak.
+
+<img width="519" height="391" alt="image" src="https://github.com/user-attachments/assets/79f7036e-cabf-42e1-ae0e-bcfe52723ec9" />
+
+** Confusion Matrix reveals:**
+
+True Negatives (Stayed correctly predicted): 1926
+
+False Positives (Predicted churn but stayed): 65
+
+False Negatives (Missed churners): 412
+
+True Positives (Correctly predicted churners): 97
+
+👉 Out of 509 actual churners, the model only caught 97 (≈19%).
+
 
