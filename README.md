@@ -259,10 +259,10 @@ Priority 2: Medium-Term Enhancements (30-60 Days)
 
 Primary KPIs:
 
--Reduction in overall churn rate
--Increase in customer lifetime value (CLV)
--Model accuracy in production environment
--Return on investment for retention initiatives
+- Reduction in overall churn rate
+- Increase in customer lifetime value (CLV)
+- Model accuracy in production environment
+- Return on investment for retention initiatives
 
 Secondary Indicators:
 
