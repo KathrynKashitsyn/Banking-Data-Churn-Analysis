@@ -33,9 +33,28 @@ In this project, I analyzed a customer dataset to uncover patterns behind churn 
 
 1. Core Data Handling & Math
 
-pandas → for data manipulation (DataFrame, .copy(), .describe(), .value_counts(), .qcut(), etc.)
+`pandas` → for data manipulation (`DataFrame`, `.copy()`, `.describe()`, `.value_counts()`, `.qcut()`, etc.)
 
-numpy → for arrays, math functions (np.abs, .tolist() conversions, etc.)
+`numpy` → for arrays, math functions (`np.abs`, `.tolist()` conversions, etc.)
+
+2. Visualization
+
+`matplotlib` → for plotting (bar plots, stacked bar plots, churn visualization).
+
+`seaborn` → sometimes implicitly used for nicer plots (not always necessary, but often paired).
+
+3. Machine Learning 
+
+From scikit-learn (`sklearn`):
+
+Modeling / Algorithms - `LogisticRegression` (classification model), `RandomForestClassifier` (tree-based model, for feature importance)
+
+Preprocessing - `StandardScaler` (normalize numeric features), `OneHotEncoder` (encode categorical variables), `ColumnTransformer` (combine different preprocessing pipelines), `Pipeline` (chain preprocessing + modeling)
+
+Model Selection - `train_test_split` (splitting data into train/test sets)
+
+Evaluation Metrics - `accuracy_score`, `precision_score`, `recall_score`, `f1_score`, `roc_auc_score`
+
 
 ## Dataset and Metadata
 The dataset contains:
