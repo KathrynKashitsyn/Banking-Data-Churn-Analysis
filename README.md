@@ -1,4 +1,4 @@
-# Customer Churn Analysis & Prediction
+# Bank Churn Analysis & Prediction
 
 ## Project Overview
 
