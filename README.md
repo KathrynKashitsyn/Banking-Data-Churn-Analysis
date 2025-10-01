@@ -5,7 +5,10 @@
 This project analyzes customer churn for a European bank which has operations in France, Germany and Spain 
 The goal is to identify key factors driving customer churn and to build a predictive model that can flag customers at high risk of leaving.
 
-Customer churn is a major challenge in subscription-based businesses. We define it as follows: customer churn occurs when a client who was using our services stops doing business with the bank. 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7438f028-d19a-4af8-b576-46dff1b99cb9" />
+
+
+Customer churn is a major challenge in many businesses. We define it as follows: customer churn occurs when a client who was using our services stops doing business with the bank. 
 
 The ultimate business objective is to reduce churn rate by enabling proactive retention campaigns.
 
@@ -25,6 +28,14 @@ In this project, I analyzed a customer dataset to uncover patterns behind churn 
 - Statistical tests
 - Machine learning modeling & evaluation
 - Communicating actionable business insights
+
+## Tools & Libraries Used
+
+1. Core Data Handling & Math
+
+pandas → for data manipulation (DataFrame, .copy(), .describe(), .value_counts(), .qcut(), etc.)
+
+numpy → for arrays, math functions (np.abs, .tolist() conversions, etc.)
 
 ## Dataset and Metadata
 The dataset contains:
